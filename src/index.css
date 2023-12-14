@@ -1,0 +1,23 @@
+/* google font : poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+/* select colors change */
+::selection {
+  @apply text-white bg-secondaryColor/70
+}
+.btn {
+  @apply uppercase text-xs xl:text-base text-darkColor  px-6 py-2 rounded-full ring-2 ring-secondaryColor/90 hover:text-white hover:bg-secondaryColor/70 duration-300 ease-in;
+}
+.active {
+  @apply uppercase text-xs xl:text-base text-white bg-secondaryColor/70 px-6 py-2 rounded-full ring-2 ring-secondaryColor/90;
+}
